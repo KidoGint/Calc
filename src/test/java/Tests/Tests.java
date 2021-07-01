@@ -20,6 +20,7 @@ public class Tests {
     }
 
 
+
     @Test(dataProvider = "testEqualsSum", dataProviderClass = Provider.class)
     public void testEqualsSum(Object res, Object arg1, Object arg2) {
         Assert.assertEquals(res, new Calc().summ(arg1, arg2), "Sum failed!!!");
